@@ -1,0 +1,13 @@
+# Logs and runtime data
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor settings
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local

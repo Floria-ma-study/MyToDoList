@@ -1,0 +1,27 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // 協作房間與待辦事項集合
+    match /rooms/{roomId} {
+      // 只要是已登入的 Google 使用者即可讀寫協作看板
+      allow read, write: if request.auth != null;
+
+      // 房間內的待辦事項清單
+      match /todos/{todoId} {
+        allow read, write: if request.auth != null;
+      }
+
+      // 房間內的在線協作成員資訊
+      match /presence/{userId} {
+        allow read, write: if request.auth != null;
+      }
+    }
+
+    // 全域待辦事項集合 (備用)
+    match /todos/{todoId} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
