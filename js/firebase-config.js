@@ -7,14 +7,14 @@ import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/11.4.
 import { getAuth } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
 
-// 預設專案設定模板 (預填專案 my-to-do-list-912a6)
+// 預設專案設定模板 (專案 my-to-do-list-912a6)
 export const DEFAULT_FIREBASE_CONFIG = {
-  apiKey: "YOUR_FIREBASE_API_KEY", // 請替換為您的 Firebase Web API Key，或於網頁設定視窗中貼上
+  apiKey: "AIzaSyC88ZGO-uDbzfhnWUVE_msHEUtEsiazG9k",
   authDomain: "my-to-do-list-912a6.firebaseapp.com",
   projectId: "my-to-do-list-912a6",
   storageBucket: "my-to-do-list-912a6.firebasestorage.app",
-  messagingSenderId: "",
-  appId: ""
+  messagingSenderId: "697344117893",
+  appId: "1:697344117893:web:96ca5174ef3e50a3f5adec"
 };
 
 const STORAGE_KEY = "mytodolist_firebase_config_override";
